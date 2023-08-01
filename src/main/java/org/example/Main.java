@@ -6,13 +6,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("붐힐 마을의 크기 N과 물풍선의 범위 M을 입력하세요: ");
         int N = scanner.nextInt();
         int M = scanner.nextInt();
 
         int[][] village = new int[N][N];
 
-        System.out.println("붐힐 마을을 나타내는 배열의 N개 줄에 각 행의 N개 칸에 존재하는 모기의 수를 입력하세요:");
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 village[i][j] = scanner.nextInt();
@@ -33,7 +31,7 @@ public class Main {
             }
         }
 
-        System.out.println("퇴치할 수 있는 모기 수의 최댓값: " + maxMosquitoes);
+        System.out.println(maxMosquitoes);
 
         scanner.close();
     }
